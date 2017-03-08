@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <parent>
+        <groupId>com.navercorp.pinpoint</groupId>
+        <artifactId>pom</artifactId>
+        <relativePath>../..</relativePath>
+        <version>1.5.2-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>pinpoint-uep-plugin</artifactId>
+    <name>pinpoint-uep-plugin</name>
+    <packaging>jar</packaging>
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.navercorp.pinpoint</groupId>
+            <artifactId>pinpoint-bootstrap-core</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.navercorp.pinpoint</groupId>
+            <artifactId>pinpoint-test</artifactId> 
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.zte.ums.uep</groupId>
+            <artifactId>usf-api</artifactId>
+            <version>1.0</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/usf-api.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.zte.ums.uep</groupId>
+            <artifactId>usf-emb-service</artifactId>
+            <version>1.0</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/usf-emb-service.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.zte.ums.uep</groupId>
+            <artifactId>usf-finterface</artifactId>
+            <version>1.0</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/usf-finterface.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.zte.ums.uep</groupId>
+            <artifactId>uca-osf-mml-clis</artifactId>
+            <version>1.0</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/uca-osf-mml-clis.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.zte.ums.uep</groupId>
+            <artifactId>uca-wsf-mml-clis</artifactId>
+            <version>1.0</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/uca-wsf-mml-clis.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.zte.ums.uep</groupId>
+            <artifactId>usf-sdk-mml</artifactId>
+            <version>1.0</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/usf-sdk-mml.jar</systemPath>
+        </dependency>
+    </dependencies>   
+</project>
