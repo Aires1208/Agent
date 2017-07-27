@@ -7,7 +7,7 @@ import base64
 
 from flask import Flask, jsonify
 
-__author__ = '10172605'
+
 
 
 _data_dict = {
